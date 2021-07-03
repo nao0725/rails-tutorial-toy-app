@@ -1,3 +1,5 @@
 class Micropost < ApplicationRecord
-  validates:contengit,length:{maximum:140}
+  belongs_to user
+  validates:contengit,length:{maximum:140},
+            presence:true
 end
